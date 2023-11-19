@@ -12,5 +12,8 @@ public class Main {
         int a = p.GetResult(g);
         System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||");
         System.out.println(a);
+        CalcWithLib lib = new CalcWithLib();
+        Integer r = lib.Calculate(g);
+        System.out.println(r);
     }
 }

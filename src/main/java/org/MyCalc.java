@@ -50,6 +50,18 @@ public class MyCalc {
         }
         input = build.toString();
     }
+    public static String DellSpacesForMain(String a) {
+        String input = a;
+        StringBuilder build = new StringBuilder(input);
+        for (int i = 0 ; i < build.length(); i++) {
+            if (build.charAt(i) == ' ') {
+                build.deleteCharAt(i);
+                i--;
+            }
+        }
+        input = build.toString();
+        return input;
+    }
     public void MakeSimpleOrder() {
         DellSpaces();
         SimpleOrder = new ArrayList<ob>();
