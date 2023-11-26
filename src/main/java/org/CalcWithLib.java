@@ -3,15 +3,14 @@ package main.java.org;
 import com.fathzer.soft.javaluator.DoubleEvaluator;
 
 public class CalcWithLib {
-    int res;
+    double res;
     String input;
-    public Integer Calculate(String a) {
+    public double Calculate(String a) {
         input = a;
         DellSpaces();
         DoubleEvaluator eval = new DoubleEvaluator();
         Double result = eval.evaluate(input);
-        Integer res = result.intValue();
-        return res;
+        return result;
     }
     public String DellSpaces() {
         StringBuilder build = new StringBuilder(input);
