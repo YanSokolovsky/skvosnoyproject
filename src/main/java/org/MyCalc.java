@@ -41,7 +41,7 @@ public class MyCalc {
             default: return -1;
         }
     }
-    public void DellSpaces() {
+    public void DellSpaces() {                                  // huge mistake duplicating code
         StringBuilder build = new StringBuilder(input);
         for (int i = 0 ; i < build.length(); i++) {
             if (build.charAt(i) == ' ') {

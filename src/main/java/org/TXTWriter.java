@@ -11,12 +11,12 @@ public class TXTWriter {
         FileWriteName = name;
         Ex = ex;
     }
-    TXTWriter(Vector<String> ex) {
-        FileWriteName = "D:\\output.txt";
+    TXTWriter(Vector<String> ex, String name) {
+        FileWriteName = name;
         Ex = ex;
     }
-    void WriteExpretions() {
-        try(FileWriter writer = new FileWriter(FileWriteName, true))
+    void WriteExpressions(boolean append) {
+        try(FileWriter writer = new FileWriter(FileWriteName, append))
         {
             for (int i = 0 ; i < Ex.size(); i++) {
                 writer.append(Ex.elementAt(i));

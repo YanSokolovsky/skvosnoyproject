@@ -18,10 +18,12 @@ public class Main {
         System.out.println(r);
         TXTReader n = new TXTReader("D:\\input.txt");
         Vector<String> rt = n.GetExpretions();
+        RegexCalc calc = new RegexCalc();
         for (int i = 0; i < rt.size(); i++) {
-            System.out.println(rt.elementAt(i));
+            rt.set(i, calc.Calculating(rt.elementAt(i)).toString());
+            System.out.println(calc.Calculating(rt.elementAt(i)));
         }
-        TXTWriter tw = new TXTWriter(rt);
-        tw.WriteExpretions();
+        TXTWriter tw = new TXTWriter(rt, "D:\\output.txt");
+        tw.WriteExpressions(false);
     }
 }
