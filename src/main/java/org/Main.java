@@ -8,7 +8,7 @@ public class Main {
         names.add("D:\\1.txt");
         names.add("D:\\2.txt");
         names.add("D:\\3.txt");
-        RarArch rar = new RarArch(names);
-        rar.DeArchvize("D:\\checking2.rar");
+        Chifrator chif = new Chifrator("D:\\1.txt", "D:\\2.txt", "keyforcrypto1234");
+        chif.chiferfile();
     }
 }
