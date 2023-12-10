@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_codec_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_commons_codec_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/DeChifrator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled/main/java/org/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/main/java/org/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Chifrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Chifrator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702233053426</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="To make chifrator">
+      <created>1702239628310</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702239628310</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -172,7 +177,8 @@
     <MESSAGE value="Make Json with API" />
     <MESSAGE value="Make archeviser and dearchevizer" />
     <MESSAGE value="Make RAR archeviser and dearchevizer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make RAR archeviser and dearchevizer" />
+    <MESSAGE value="To make chifrator" />
+    <option name="LAST_COMMIT_MESSAGE" value="To make chifrator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -190,11 +196,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/ZipArch.java</url>
           <line>21</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/Chifrator.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

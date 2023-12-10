@@ -8,7 +8,9 @@ public class Main {
         names.add("D:\\1.txt");
         names.add("D:\\2.txt");
         names.add("D:\\3.txt");
-        Chifrator chif = new Chifrator("D:\\1.txt", "D:\\2.txt", "keyforcrypto1234");
+        Chifrator chif = new Chifrator("D:\\1.json", "D:\\2.json", "keyforcrypto1234");
         chif.chiferfile();
+        DeChifrator some = new DeChifrator("D:\\2.json", "d:\\3.json", "keyforcrypto1234");
+        some.dechiferfile();
     }
 }
