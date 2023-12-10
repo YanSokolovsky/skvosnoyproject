@@ -33,5 +33,8 @@
     <orderEntry type="library" name="woodstox-core-asl-4.4.1" level="project" />
     <orderEntry type="library" name="stax2-api-4.2.2" level="project" />
     <orderEntry type="library" name="jackson-dataformat-xml-2.15.3" level="project" />
+    <orderEntry type="library" name="junrar-7.5.5" level="project" />
+    <orderEntry type="library" name="slf4j-api-2.0.9" level="project" />
+    <orderEntry type="library" name="slf4j-simple-2.0.9" level="project" />
   </component>
 </module>

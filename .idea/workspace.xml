@@ -2,24 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_crypto_1_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/woodstox_core_asl_4_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Serializerex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/XMLReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/XMLWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/ZipArch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/ZipDearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/ex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/one.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/xmlserialiser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jaxb_api_2_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jaxb_api_2_3_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jackson_dataformat_xml_2_15_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junrar_7_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_api_2_0_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_simple_2_0_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/stax2_api_4_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Chifrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/RarArch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/RarDearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled/main/java/org/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/main/java/org/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/JSONWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/JSONWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/JSONallex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/JSONallex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/JSONoutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/JSONoutput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Serializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,30 +43,30 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/jackson-dataformat-xml-2.15.3.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "D:/slf4j-simple-2.0.9.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JSON&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JSON"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -160,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702069795419</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Make archeviser and dearchevizer">
+      <created>1702219498471</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702219498471</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -168,7 +168,8 @@
     <MESSAGE value="Do TXTReader and TXTWriter" />
     <MESSAGE value="Make RegexCalc" />
     <MESSAGE value="Make Json with API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make Json with API" />
+    <MESSAGE value="Make archeviser and dearchevizer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make archeviser and dearchevizer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
