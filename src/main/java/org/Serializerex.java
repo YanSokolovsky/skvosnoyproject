@@ -8,23 +8,27 @@ import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
 import java.io.IOException;
 
-public class Serializer extends StdSerializer<JSONoutput> {
+public class Serializerex extends StdSerializer<JSONallex> {
 
-    public Serializer() {
+    public Serializerex() {
         this(null);
     }
 
-    public Serializer(Class<JSONoutput> t) {
+    public Serializerex(Class<JSONallex> t) {
         super(t);
     }
 
     @Override
     public void serialize(
-            JSONoutput value, JsonGenerator jgen, SerializerProvider provider)
+            JSONallex value, JsonGenerator jgen, SerializerProvider provider)
             throws IOException, JsonProcessingException {
         jgen.setPrettyPrinter(new DefaultPrettyPrinter());
         jgen.writeStartObject();
-        jgen.writeStringField("res", value.getRes());
+        jgen.writeArrayFieldStart("array");
+        for (int i = 0 ; i < value.array.size(); i++) {
+            jgen.writeString(value.array.get(i).getRes());
+        }
+        jgen.writeEndArray();
         jgen.writeEndObject();
         jgen.close();
     }

@@ -15,22 +15,35 @@ public class JSONWriter {
     JSONWriter(String n) {
         name = n;
     }
-    void WriteExpressions(String result) {
-        JSONallex r = new JSONallex();
+    void WriteExpression(String result) {
         JSONoutput rt = new JSONoutput();
-        JSONoutput rt1 = new JSONoutput();
-        rt1.setRes(result);
-        r.array = new ArrayList<>();
-        r.array.add(rt1);
         rt.setRes(result);
-        r.array.add(rt);
         ObjectMapper obMap = new ObjectMapper();
         SimpleModule module = new SimpleModule();
-        module.addSerializer(JSONallex.class, new Serializer());
+        module.addSerializer(JSONoutput.class, new Serializer());
         obMap.registerModule(module);
         File file = new File(name);
         try {
-            obMap.writeValue(file, r);
+            obMap.writeValue(file, rt);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    void WriteExpression(ArrayList<String> result) {
+        JSONallex rt = new JSONallex();
+        rt.array = new ArrayList<>();
+        for (int i = 0 ; i < result.size(); i++) {
+            JSONoutput j = new JSONoutput();
+            j.setRes(result.get(i));
+            rt.array.add(j);
+        }
+        ObjectMapper obMap = new ObjectMapper();
+        SimpleModule module = new SimpleModule();
+        module.addSerializer(JSONallex.class, new Serializerex());
+        obMap.registerModule(module);
+        File file = new File(name);
+        try {
+            obMap.writeValue(file, rt);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

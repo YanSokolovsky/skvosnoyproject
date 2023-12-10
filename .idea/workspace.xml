@@ -2,11 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/JSONallex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/JSONoutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Serializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_crypto_1_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/woodstox_core_asl_4_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Serializerex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/XMLReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/XMLWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ZipArch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ZipDearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/one.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/xmlserialiser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jaxb_api_2_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jaxb_api_2_3_11.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/main/java/org/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/main/java/org/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/JSONWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/JSONWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/JSONallex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/JSONallex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/JSONoutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/JSONoutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +62,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/jackson-annotations-2.15.3.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/jackson-dataformat-xml-2.15.3.jar&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -139,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701640695528</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Make Json with API">
+      <created>1702069795419</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702069795419</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -160,6 +181,11 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/ZipArch.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

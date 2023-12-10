@@ -9,5 +9,6 @@ public class JSONoutput {
         this.res = res;
     }
 
-    String res;
+    private String some;
+    private String res;
 }
