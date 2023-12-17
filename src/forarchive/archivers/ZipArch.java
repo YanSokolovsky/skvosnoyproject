@@ -1,4 +1,4 @@
-package main.java.org;
+package forarchive.archivers;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

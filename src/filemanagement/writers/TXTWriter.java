@@ -1,4 +1,4 @@
-package main.java.org;
+package filemanagement.writers;
 
 import java.io.FileWriter;
 import java.io.IOException;

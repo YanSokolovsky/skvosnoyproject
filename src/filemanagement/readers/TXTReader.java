@@ -1,4 +1,4 @@
-package main.java.org;
+package filemanagement.readers;
 
 import java.io.FileReader;
 import java.io.IOException;

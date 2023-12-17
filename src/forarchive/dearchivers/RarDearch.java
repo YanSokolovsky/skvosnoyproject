@@ -1,4 +1,4 @@
-package main.java.org;
+package forarchive.dearchivers;
 
 import com.github.junrar.Junrar;
 import com.github.junrar.exception.RarException;

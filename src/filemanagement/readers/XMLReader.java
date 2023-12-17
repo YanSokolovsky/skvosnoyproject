@@ -1,6 +1,7 @@
-package main.java.org;
+package filemanagement.readers;
 
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import filemanagement.writers.ex;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,11 +9,11 @@ import java.util.ArrayList;
 
 public class XMLReader {
     String filename;
-    XMLReader(String name)
+    public XMLReader(String name)
     {
         filename = name;
     }
-    ArrayList<String> GetExpressions() {
+    public ArrayList<String> GetExpressions() {
         XmlMapper obMap = new XmlMapper();
 
         ex expressions;

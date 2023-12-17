@@ -1,7 +1,6 @@
-package main.java.org;
+package forcrypo.encryptors;
 
 import org.apache.commons.codec.binary.Base64;
-
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
@@ -14,22 +13,24 @@ import java.io.IOException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 
-public class DeChifrator {
+public class Chifrator {
     String nameoutput;
     String nameinput;
     String key;
-    DeChifrator(String name1, String name2, String k) {
+    Chifrator(String name1, String name2, String k) {
         nameinput = name1;
         nameoutput = name2;
         key = k;
     }
-    void dechiferfile() {
-        String encryptedString = new String();
+    void chiferfile() {
+        String notc = new String();
+        String c = new String();
         try {
             BufferedReader reader = new BufferedReader(new FileReader(nameinput));
             String t = reader.readLine();
             while (t != null) {
-                encryptedString += t;
+                notc += t;
+                notc += "\r\n";
                 t = reader.readLine();
             }
             reader.close();
@@ -46,28 +47,23 @@ public class DeChifrator {
             throw new RuntimeException(e);
         }
         try {
-            cipher.init(Cipher.DECRYPT_MODE, skeySpec);
+            cipher.init(Cipher.ENCRYPT_MODE, skeySpec);
         } catch (InvalidKeyException e) {
             throw new RuntimeException(e);
         }
 
-        byte[] original = new byte[0];
+        byte[] encrypted = new byte[0];
         try {
-            original = cipher.doFinal(Base64.decodeBase64(encryptedString));
+            encrypted = cipher.doFinal(notc.getBytes());
         } catch (IllegalBlockSizeException e) {
             throw new RuntimeException(e);
         } catch (BadPaddingException e) {
             throw new RuntimeException(e);
         }
-        String originalString = new String(original);
-        FileWriter filewr = null;
+        c = Base64.encodeBase64String(encrypted);
         try {
-            filewr = new FileWriter(nameoutput, false);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        try {
-            filewr.write(originalString);
+            FileWriter filewr = new FileWriter(nameoutput, false);
+            filewr.write(c);
             filewr.close();
         } catch (IOException e) {
             throw new RuntimeException(e);

@@ -1,4 +1,4 @@
-package main.java.org;
+package filemanagement.writers;
 
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class XMLWriter {
     String filename;
-    XMLWriter(String name) {
+    public XMLWriter(String name) {
         filename = name;
     }
     void WriteExpression(String result) throws IOException {
@@ -19,7 +19,7 @@ public class XMLWriter {
         ob.on = result;
         Map.writerWithDefaultPrettyPrinter().writeValue(file, ob);
     }
-    void WriteExpression(ArrayList<String> result) throws IOException {
+    public void WriteExpression(ArrayList<String> result) throws IOException {
         XmlMapper Map = new XmlMapper();
         Map.registerModule(new SimpleModule().addSerializer(ex.class, new xmlserialiser()));
         File file = new File(filename);

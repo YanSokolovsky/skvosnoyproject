@@ -1,4 +1,4 @@
-package main.java.org;
+package filemanagement.writers;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;

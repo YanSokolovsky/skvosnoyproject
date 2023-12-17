@@ -1,4 +1,4 @@
-package main.java.org;
+package filemanagement.writers;
 
 public class JSONoutput {
     public String getRes() {

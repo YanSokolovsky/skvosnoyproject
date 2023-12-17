@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/JSONReaderNonAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/XMLReaderNonAPI.java" afterDir="false" />
+    <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="To make non API classes">
+      <change afterPath="$PROJECT_DIR$/src/calculators/CalcWithLib.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/calculators/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/main/java/org/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/main/java/org/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CalcWithLib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/CalcWithLib.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/JSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/JSONoutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/JSONoutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/CalcWithLib.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Chifrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forcrypo/encryptors/Chifrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/DeChifrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forcrypo/decryptors/DeChifrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/readers/JSONReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/JSONReaderNonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/readers/JSONReaderNonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/JSONWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/JSONWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/JSONallex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/JSONallex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/JSONoutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/JSONoutput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Serializerex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Serializerex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/MyCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculators/MyCalc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/MyCalcTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/RarArch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/archivers/RarArch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/RarDearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/RarDearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/RegexCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculators/RegexCalc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Serializerex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/Serializerex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/TXTReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/readers/TXTReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/TXTWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/TXTWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/XMLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/readers/XMLReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/XMLReaderNonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/readers/XMLReaderNonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/XMLWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/XMLWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ZipArch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/archivers/ZipArch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ZipDearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/ZipDearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/ex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/one.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/one.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/xmlserialiser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/xmlserialiser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +44,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -79,7 +100,7 @@
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.org.*" />
+          <option name="PATTERN" value="main.java.org.filemanagement.writers.readers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702240902157</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="To make non API classes">
+      <created>1702825387495</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702825387495</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -191,22 +219,14 @@
     <MESSAGE value="Make RAR archeviser and dearchevizer" />
     <MESSAGE value="To make chifrator" />
     <MESSAGE value="To make dechifrator" />
-    <option name="LAST_COMMIT_MESSAGE" value="To make dechifrator" />
+    <MESSAGE value="To make non API classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="To make non API classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/RegexCalc.java</url>
-          <line>127</line>
-          <properties class="main.java.org.RegexCalc" method="Calculating">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/ZipArch.java</url>
+          <url>file://$PROJECT_DIR$/src/forarchive/archivers/ZipArch.java</url>
           <line>21</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>

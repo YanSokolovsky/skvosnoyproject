@@ -1,4 +1,4 @@
-package main.java.org;
+package filemanagement.readers;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -22,11 +22,11 @@ public class JSONReader {
             ex =  a;
         }
     }
-    JSONReader(String filename) {
+    public JSONReader(String filename) {
         FileName = filename;
         json = new File(filename);
     }
-    ArrayList<String> GetExpressions(){
+    public ArrayList<String> GetExpressions(){
         ObjectMapper obMap = new ObjectMapper();
         try {
             arr = obMap.readValue(json, new TypeReference<>(){});

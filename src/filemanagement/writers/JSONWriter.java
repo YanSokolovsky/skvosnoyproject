@@ -1,4 +1,4 @@
-package main.java.org;
+package filemanagement.writers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
@@ -12,7 +12,7 @@ public class JSONWriter {
     JSONWriter() {
         name = "D:\\output.json";
     }
-    JSONWriter(String n) {
+    public JSONWriter(String n) {
         name = n;
     }
     void WriteExpression(String result) {
@@ -29,7 +29,7 @@ public class JSONWriter {
             throw new RuntimeException(e);
         }
     }
-    void WriteExpression(ArrayList<String> result) {
+    public void WriteExpression(ArrayList<String> result) {
         JSONallex rt = new JSONallex();
         rt.array = new ArrayList<>();
         for (int i = 0 ; i < result.size(); i++) {

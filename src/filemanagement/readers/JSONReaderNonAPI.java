@@ -1,4 +1,4 @@
-package main.java.org;
+package filemanagement.readers;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -10,10 +10,10 @@ import java.util.regex.Pattern;
 
 public class JSONReaderNonAPI {
     String filename;
-    JSONReaderNonAPI(String name) {
+    public JSONReaderNonAPI(String name) {
         filename = name;
     }
-    ArrayList<String> GetExpressions() {
+    public ArrayList<String> GetExpressions() {
         ArrayList<String> mass = new ArrayList<>();
         Pattern parseexpre = Pattern.compile("\"ex\" : \"(.*)\"");
         try {

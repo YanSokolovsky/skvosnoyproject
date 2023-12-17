@@ -1,4 +1,4 @@
-package main.java.org;
+package filemanagement.readers;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -10,10 +10,10 @@ import java.util.regex.Pattern;
 
 public class XMLReaderNonAPI {
     String filename;
-    XMLReaderNonAPI(String name) {
+    public XMLReaderNonAPI(String name) {
         filename = name;
     }
-    ArrayList<String> GetExpressions() {
+    public ArrayList<String> GetExpressions() {
         ArrayList<String> mass = new ArrayList<>();
         Pattern parseexpre = Pattern.compile("<on>(.*)</on>");
         try {

@@ -1,7 +1,7 @@
-package main.java.org;
+package filemanagement.writers;
 
 import java.util.List;
 
-class ex {
+public class ex {
     public List<one> expre;
 }
