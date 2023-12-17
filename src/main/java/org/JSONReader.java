@@ -5,14 +5,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Vector;
 
 public class JSONReader {
     String FileName;
     File json;
     List<expression> arr;
-    Vector<String> res;
+    ArrayList<String> res;
     static class expression {
         private String ex;
         String getEx() {
@@ -26,17 +26,16 @@ public class JSONReader {
         FileName = filename;
         json = new File(filename);
     }
-    Vector<String> GetExpressions(){
+    ArrayList<String> GetExpressions(){
         ObjectMapper obMap = new ObjectMapper();
-        List<expression> exList = null;
         try {
-            exList = obMap.readValue(json, new TypeReference<>(){});
+            arr = obMap.readValue(json, new TypeReference<>(){});
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        res = new Vector();
-        for (int i = 0 ; i < exList.size(); i++) {
-            res.add(exList.get(i).getEx());
+        res = new ArrayList<>();
+        for (int i = 0 ; i < arr.size(); i++) {
+            res.add(arr.get(i).getEx());
         }
         return res;
     }

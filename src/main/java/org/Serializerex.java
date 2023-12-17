@@ -23,13 +23,13 @@ public class Serializerex extends StdSerializer<JSONallex> {
             JSONallex value, JsonGenerator jgen, SerializerProvider provider)
             throws IOException, JsonProcessingException {
         jgen.setPrettyPrinter(new DefaultPrettyPrinter());
-        jgen.writeStartObject();
-        jgen.writeArrayFieldStart("array");
+        jgen.writeStartArray();
         for (int i = 0 ; i < value.array.size(); i++) {
-            jgen.writeString(value.array.get(i).getRes());
+            jgen.writeStartObject();
+            jgen.writeStringField("ex", value.array.get(i).getRes());
+            jgen.writeEndObject();
         }
         jgen.writeEndArray();
-        jgen.writeEndObject();
         jgen.close();
     }
 }

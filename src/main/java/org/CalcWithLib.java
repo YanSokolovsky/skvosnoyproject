@@ -5,7 +5,7 @@ import com.fathzer.soft.javaluator.DoubleEvaluator;
 public class CalcWithLib {
     double res;
     String input;
-    public double Calculate(String a) {
+    public Double Calculate(String a) {
         input = a;
         DellSpaces();
         DoubleEvaluator eval = new DoubleEvaluator();

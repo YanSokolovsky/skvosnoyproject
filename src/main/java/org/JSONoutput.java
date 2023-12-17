@@ -8,7 +8,5 @@ public class JSONoutput {
     public void setRes(String res) {
         this.res = res;
     }
-
-    private String some;
     private String res;
 }

@@ -1,16 +1,57 @@
 package main.java.org;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> names = new ArrayList<>();
-        names.add("D:\\1.txt");
-        names.add("D:\\2.txt");
-        names.add("D:\\3.txt");
-        Chifrator chif = new Chifrator("D:\\1.json", "D:\\2.json", "keyforcrypto1234");
-        chif.chiferfile();
-        DeChifrator some = new DeChifrator("D:\\2.json", "d:\\3.json", "keyforcrypto1234");
-        some.dechiferfile();
+        JSONReader readerJSON = new JSONReader("D:\\testing\\input.json");
+        ArrayList<String> expressions = new ArrayList<>();
+        ArrayList<String> results = new ArrayList<>();
+        MyCalc calculator = new MyCalc();
+        expressions = readerJSON.GetExpressions();
+        for (int i = 0; i < expressions.size(); i++) {
+            System.out.println(expressions.get(i));
+            results.add(Double.toString(calculator.GetResult(expressions.get(i))));
+        }
+        for (int i = 0; i < expressions.size(); i++) {
+            System.out.println(results.get(i));
+        }
+        JSONWriter writerJSON = new JSONWriter("D:\\testing\\output.json");
+        writerJSON.WriteExpression(results);
+
+
+
+
+        expressions = new ArrayList<>();
+        XMLReader  readerXML = new XMLReader("D:\\testing\\input.xml");
+        expressions = readerXML.GetExpressions();
+        results = new ArrayList<>();
+        for (int i = 0; i < expressions.size(); i++) {
+            System.out.println(expressions.get(i));
+            results.add(Double.toString(calculator.GetResult(expressions.get(i))));
+        }
+        XMLWriter writerXML = new XMLWriter("D:\\testing\\output.xml");
+        try {
+            writerXML.WriteExpression(results);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+
+
+
+
+        JSONReaderNonAPI nonAPI = new JSONReaderNonAPI("D:\\testing\\input.json");
+        expressions = nonAPI.GetExpressions();
+        for (int i = 0; i < expressions.size(); i++) {
+            System.out.println(expressions.get(i));
+        }
+        System.out.println("=============================");
+        XMLReaderNonAPI readerNonAPI = new XMLReaderNonAPI("D:\\testing\\input.xml");
+        expressions = readerNonAPI.GetExpressions();
+        for (int i = 0; i < expressions.size(); i++) {
+            System.out.println(expressions.get(i));
+        }
     }
 }
