@@ -1,4 +1,4 @@
-package filemanagement.writers;
+package filemanagement;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 

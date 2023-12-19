@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/forarchive/test/DearchivatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/forcrypo/decryptors/Decoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/forcrypo/encryptors/Encoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/forcrypo/encryptors/Shivrator.java" afterDir="false" />
+    <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="To make forshifrator extending classes">
+      <change afterPath="$PROJECT_DIR$/src/filemanagement/readers/Reader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forarchive/dearchivers/Dearchivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/Dearchivator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forarchive/dearchivers/RarDearchivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/RarDearchivator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forarchive/dearchivers/ZipDearchivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/ZipDearchivator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forcrypo/decryptors/DeChifrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forcrypo/decryptors/Decryptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forcrypo/encryptors/Chifrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/readers/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/readers/JSONReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/readers/TXTReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/readers/TXTReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/readers/XMLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/readers/XMLReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/XMLWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/XMLWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/ex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/ex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/one.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/one.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/xmlserialiser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/xmlserialiser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700389241300</updated>
       <workItem from="1702909050695" duration="1370000" />
-      <workItem from="1703001743655" duration="11465000" />
+      <workItem from="1703001743655" duration="14801000" />
     </task>
     <task id="LOCAL-00001" summary="Do class calc">
       <created>1700416421337</created>
@@ -229,11 +228,38 @@
       <option name="project" value="LOCAL" />
       <updated>1702847836487</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="To make forshifrator extending classes">
+      <option name="closed" value="true" />
+      <created>1703014748227</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1703014748227</updated>
+    </task>
+    <task id="LOCAL-00016" summary="To make forshifrator extending classes">
+      <option name="closed" value="true" />
+      <created>1703014859603</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1703014859603</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Do class calc" />
@@ -247,6 +273,7 @@
     <MESSAGE value="To make non API classes" />
     <MESSAGE value="To make calculators extending class" />
     <MESSAGE value="To make Dearchivator extending class" />
-    <option name="LAST_COMMIT_MESSAGE" value="To make Dearchivator extending class" />
+    <MESSAGE value="To make forshifrator extending classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="To make forshifrator extending classes" />
   </component>
 </project>

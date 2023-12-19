@@ -1,37 +1,26 @@
 package filemanagement.readers;
 
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.Vector;
+import java.io.*;
+import java.util.ArrayList;
 
-public class TXTReader<in> {
-    String FileInputName;
-    Vector<String> Ex;
+public class TXTReader extends Reader {
     TXTReader(String Input) {
-        FileInputName = Input;
-        Ex = new Vector<>();
-
+        fileName = Input;
     }
-    Vector<String> GetExpretions() {
-        String set;
-        Vector<String> vec = new Vector();
-        StringBuilder temp = new StringBuilder();
-        try(FileReader in = new FileReader(FileInputName)) {
-            int w = in.read();
-            while (w != -1) {
-                if (w == (int) '\n' && !temp.isEmpty()) {
-                    vec.add(temp.toString());
-                    temp = new StringBuilder();
-                } else {
-                    temp.append((char) w);
-                }
-                w = in.read();
+    @Override
+    public ArrayList<String> read() {
+        ArrayList<String> expressions = new ArrayList<>();
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                expressions.add(line);
             }
-            vec.add(temp.toString());
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
-        catch(IOException ex){
-            System.out.println(ex.getMessage());
-        }
-        return vec;
+        return expressions;
     }
 }

@@ -1,42 +1,28 @@
 package filemanagement.readers;
 
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
-public class JSONReader {
-    String FileName;
-    File json;
-    List<expression> arr;
-    ArrayList<String> res;
-    static class expression {
-        private String ex;
-        String getEx() {
-            return ex;
-        }
-        void setEx(String a) {
-            ex =  a;
-        }
-    }
+public class JSONReader extends Reader{
     public JSONReader(String filename) {
-        FileName = filename;
-        json = new File(filename);
+        fileName = filename;
     }
-    public ArrayList<String> GetExpressions(){
+    @Override
+    public ArrayList<String> read(){
+        ArrayList<String> expressions = new ArrayList<>();
         ObjectMapper obMap = new ObjectMapper();
+        data Data = null;
         try {
-            arr = obMap.readValue(json, new TypeReference<>(){});
+            Data = obMap.readValue(new File(fileName), data.class);
+            for (int i = 0 ; i < Data.expressions.size(); i++) {
+                expressions.add(Data.expressions.get(i).expression);
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        res = new ArrayList<>();
-        for (int i = 0 ; i < arr.size(); i++) {
-            res.add(arr.get(i).getEx());
-        }
-        return res;
+        return expressions;
     }
 }
