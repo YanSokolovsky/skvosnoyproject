@@ -11,6 +11,9 @@ import java.util.List;
 public class RarDearchivator extends Dearchivator {
     RarDearchivator(String filename) {
         archFile = filename;
+        String address = getAddressOfFile(filename);
+        address += "\\RarDeachiveResult\\";
+        setStandartName(address);
     }
     public ArrayList<String> getNames(List<File> files) {
         ArrayList<String> names = new ArrayList<>();
@@ -23,7 +26,7 @@ public class RarDearchivator extends Dearchivator {
     ArrayList<String> dearchive() {
         List<File> files = new ArrayList<>();
         File rarFile = new File(archFile);
-        File destDir = new File("C:\\");
+        File destDir = new File(standartName);
         try {
             files = Junrar.extract(rarFile, destDir);
         } catch (IOException | RarException e) {
@@ -33,6 +36,14 @@ public class RarDearchivator extends Dearchivator {
     }
     @Override
     ArrayList<String> dearchive(String fileDestination) {
-        return new ArrayList<>();
+        List<File> files = new ArrayList<>();
+        File rarFile = new File(archFile);
+        File destDir = new File(fileDestination);
+        try {
+            files = Junrar.extract(rarFile, destDir);
+        } catch (IOException | RarException e) {
+            e.printStackTrace();
+        }
+        return getNames(files);
     }
 }

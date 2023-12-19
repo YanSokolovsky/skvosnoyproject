@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/forarchive/archivers/Archivator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/forarchive/archivers/RarArchivator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/forarchive/archivers/ZipArchivator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/Dearchivator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/RarDearchivator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/forarchive/test/DearchivatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/forcrypo/decryptors/Decoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/forcrypo/encryptors/Encoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/forcrypo/encryptors/Shivrator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/main/java/org/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/main/java/org/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/main/java/org/MyCalc$ob.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/main/java/org/MyCalc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/main/java/org/MyCalcTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forarchive/archivers/RarArch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forarchive/archivers/ZipArch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forarchive/dearchivers/RarDearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forarchive/dearchivers/ZipDearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/ZipDearchivator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forarchive/dearchivers/Dearchivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/Dearchivator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forarchive/dearchivers/RarDearchivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/RarDearchivator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forarchive/dearchivers/ZipDearchivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/ZipDearchivator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forcrypo/decryptors/DeChifrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forcrypo/decryptors/Decryptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forcrypo/encryptors/Chifrator.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -40,42 +39,57 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2YOGVoAwCRHDL79GGKNzfo5c0Dc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last.edited.regexp": "C:\\\\fsdf.",
-    "last_opened_file_path": "D:/commons-codec-1.8.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last.edited.regexp&quot;: &quot;C:\\\\fsdf.&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/wexes/IdeaProjects/skvosnoyproject/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JSON"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wexes\IdeaProjects\skvosnoyproject\src\forarchive" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="forarchive.test" />
       <recent name="main.java.org" />
     </key>
   </component>
@@ -99,6 +113,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -107,6 +128,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700389241300</updated>
+      <workItem from="1702909050695" duration="1370000" />
+      <workItem from="1703001743655" duration="11465000" />
     </task>
     <task id="LOCAL-00001" summary="Do class calc">
       <created>1700416421337</created>
@@ -199,8 +222,18 @@
       <option name="project" value="LOCAL" />
       <updated>1702839065327</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="To make Dearchivator extending class">
+      <created>1702847836487</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702847836487</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Do class calc" />
@@ -213,6 +246,7 @@
     <MESSAGE value="To make dechifrator" />
     <MESSAGE value="To make non API classes" />
     <MESSAGE value="To make calculators extending class" />
-    <option name="LAST_COMMIT_MESSAGE" value="To make calculators extending class" />
+    <MESSAGE value="To make Dearchivator extending class" />
+    <option name="LAST_COMMIT_MESSAGE" value="To make Dearchivator extending class" />
   </component>
 </project>

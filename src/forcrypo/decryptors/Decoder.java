@@ -1,28 +1,10 @@
-package forarchive.dearchivers;
+package forcrypo.decryptors;
 
-import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public abstract class Dearchivator {
-    public String getStandartName() {
-        return standartName;
-    }
-
-    public void setStandartName(String tandartName) {
-        standartName = standartName;
-    }
-
-    String standartName;
-
-    String archFile;
-    public String getOutputFile() {
-        return archFile;
-    }
-
-    public void setOutputFile(String outputFile) {
-        this.archFile = outputFile;
-    }
+public abstract class Decoder {
+    String Key;
     String dellitingSlashes(String fileName) {
         String expression = "\\+$";
         fileName.replaceAll(expression, "");
@@ -52,6 +34,18 @@ public abstract class Dearchivator {
             return fileName;
         }
     }
-    abstract ArrayList<String> dearchive();
-    abstract ArrayList<String> dearchive(String fileDestination);
+    boolean isDecoded(String fileName) {
+        Pattern pattern = Pattern.compile("[^.]+$");
+        Matcher matcher = pattern.matcher(fileName);
+        if (matcher.find()) {
+            String format = fileName.substring(matcher.start(), matcher.end());
+            return switch (format) {
+                case "json", "txt", "zip", "rar", "Rar", "RAR", "Zip", "ZIP", "xml", "pdf" -> true;
+                default -> false;
+            };
+        } else {
+            return false;
+        }
+    }
+    abstract void decryptFile();
 }
