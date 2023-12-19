@@ -8,22 +8,22 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class JSONReaderNonAPI {
-    String filename;
+public class JSONReaderNonAPI extends Reader{
     public JSONReaderNonAPI(String name) {
-        filename = name;
+        fileName = name;
     }
-    public ArrayList<String> GetExpressions() {
+    @Override
+    public ArrayList<String> read() {
         ArrayList<String> mass = new ArrayList<>();
-        Pattern parseexpre = Pattern.compile("\"ex\" : \"(.*)\"");
+        Pattern parseexpre = Pattern.compile("\"expression\" : \"(.*)\"");
         try {
-            BufferedReader read = new BufferedReader( new FileReader(filename));
+            BufferedReader read = new BufferedReader( new FileReader(fileName));
             String curr;
             while(read.ready()) {
                 curr =  read.readLine();
                 Matcher match = parseexpre.matcher(curr);
                 if (match.find())
-                    mass.add(match.group(1).toString());
+                    mass.add(match.group(1));
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);

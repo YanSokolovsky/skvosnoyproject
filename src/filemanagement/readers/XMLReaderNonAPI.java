@@ -8,22 +8,22 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class XMLReaderNonAPI {
-    String filename;
+public class XMLReaderNonAPI extends Reader{
     public XMLReaderNonAPI(String name) {
-        filename = name;
+        fileName = name;
     }
-    public ArrayList<String> GetExpressions() {
+    @Override
+    public ArrayList<String> read() {
         ArrayList<String> mass = new ArrayList<>();
-        Pattern parseexpre = Pattern.compile("<on>(.*)</on>");
+        Pattern parseexpre = Pattern.compile("<expression>(.*)</expression>");
         try {
-            BufferedReader read = new BufferedReader( new FileReader(filename));
+            BufferedReader read = new BufferedReader( new FileReader(fileName));
             String curr;
             while(read.ready()) {
                 curr =  read.readLine();
                 Matcher match = parseexpre.matcher(curr);
                 if (match.find())
-                    mass.add(match.group(1).toString());
+                    mass.add(match.group(1));
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
