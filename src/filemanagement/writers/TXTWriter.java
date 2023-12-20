@@ -1,31 +1,24 @@
 package filemanagement.writers;
 
+import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Vector;
+import java.util.ArrayList;
 
-public class TXTWriter {
-    String FileWriteName;
-    Vector<String> Ex;
-    TXTWriter(String name, Vector<String> ex) {
-        FileWriteName = name;
-        Ex = ex;
+public class TXTWriter extends Writer{
+    TXTWriter(String name) {
+        fileName = name;
     }
-    TXTWriter(Vector<String> ex, String name) {
-        FileWriteName = name;
-        Ex = ex;
-    }
-    void WriteExpressions(boolean append) {
-        try(FileWriter writer = new FileWriter(FileWriteName, append))
-        {
-            for (int i = 0 ; i < Ex.size(); i++) {
-                writer.append(Ex.elementAt(i));
-                writer.append('\n');
+    void write(ArrayList<String> results) {
+        try {
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName));
+            for (String result : results) {
+                bufferedWriter.write(result);
+                bufferedWriter.newLine();
             }
-            writer.flush();
-        }
-        catch(IOException ex){
-            System.out.println(ex.getMessage());
+            bufferedWriter.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }

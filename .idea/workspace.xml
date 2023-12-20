@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="To start work with filemanagers. I will write CLI soon." />
+    <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="To start work with filemanagers++. I will write CLI soon.">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/filemanagement/writers/JSONSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/filemanagement/writers/JSONWriterNonAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/filemanagement/writers/Writer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/filemanagement/writers/XMLSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/filemanagement/writers/XMLWriterNonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/JSONWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/JSONWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/Serializerex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/TXTWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/TXTWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/XMLWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/XMLWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/xmlserialiser.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,7 +132,8 @@
       <option name="presentableId" value="Default" />
       <updated>1700389241300</updated>
       <workItem from="1702909050695" duration="1370000" />
-      <workItem from="1703001743655" duration="15112000" />
+      <workItem from="1703001743655" duration="15477000" />
+      <workItem from="1703081336359" duration="5156000" />
     </task>
     <task id="LOCAL-00001" summary="Do class calc">
       <created>1700416421337</created>
@@ -242,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703020955337</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="To start work with filemanagers++. I will write CLI soon.">
+      <option name="closed" value="true" />
+      <created>1703021251454</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1703021251454</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +296,7 @@
     <MESSAGE value="To make Dearchivator extending class" />
     <MESSAGE value="To make forshifrator extending classes" />
     <MESSAGE value="To start work with filemanagers. I will write CLI soon." />
-    <option name="LAST_COMMIT_MESSAGE" value="To start work with filemanagers. I will write CLI soon." />
+    <MESSAGE value="To start work with filemanagers++. I will write CLI soon." />
+    <option name="LAST_COMMIT_MESSAGE" value="To start work with filemanagers++. I will write CLI soon." />
   </component>
 </project>
