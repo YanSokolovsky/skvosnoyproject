@@ -38,7 +38,7 @@ public class Decryptor extends Decoder{
                 address += "\\";
                 String normalName = address + new String(decryptedBytesOfName);
                 File newfile = new File(normalName);
-                boolean result = oldfile.renameTo(newfile);
+                oldfile.renameTo(newfile);
                 ins.close();
                 FileOutputStream outs = new FileOutputStream(normalName);
                 outs.write(decryptedBytes);

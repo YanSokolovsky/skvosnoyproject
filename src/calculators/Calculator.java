@@ -3,7 +3,7 @@ package calculators;
 public abstract class Calculator {
     Double Result;
     String Expression;
-    class Data {
+    static class Data {
         public Double Operand;
         public char arithmeticOperator;
         public boolean Type_Of_Data;
@@ -17,8 +17,8 @@ public abstract class Calculator {
             arithmeticOperator = arithmetic_sign;
             Type_Of_Data = false;
         }
-        public boolean isOperand() {
-            return Type_Of_Data;
+        public boolean isSign() {
+            return !Type_Of_Data;
         }
     }
     abstract Double Calculate(String expression);

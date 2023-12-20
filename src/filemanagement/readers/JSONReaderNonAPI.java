@@ -15,13 +15,13 @@ public class JSONReaderNonAPI extends Reader{
     @Override
     public ArrayList<String> read() {
         ArrayList<String> mass = new ArrayList<>();
-        Pattern parseexpre = Pattern.compile("\"expression\" : \"(.*)\"");
+        Pattern parsers = Pattern.compile("\"expression\" : \"(.*)\"");
         try {
             BufferedReader read = new BufferedReader( new FileReader(fileName));
             String curr;
             while(read.ready()) {
                 curr =  read.readLine();
-                Matcher match = parseexpre.matcher(curr);
+                Matcher match = parsers.matcher(curr);
                 if (match.find())
                     mass.add(match.group(1));
             }

@@ -4,20 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="To start work with filemanagers++. I will write CLI soon.">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/filemanagement/writers/JSONSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/filemanagement/writers/JSONWriterNonAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/filemanagement/writers/Writer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/filemanagement/writers/XMLSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/filemanagement/writers/XMLWriterNonAPI.java" afterDir="false" />
+    <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="Done with extending.">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/JSONWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/JSONWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/Serializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/Serializerex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/TXTWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/TXTWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/XMLWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/XMLWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/xmlserialiser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculators/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculators/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculators/MyCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculators/MyCalc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculators/RegexCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculators/RegexCalc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/readers/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/readers/JSONReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/readers/JSONReaderNonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/readers/JSONReaderNonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/readers/XMLReaderNonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/readers/XMLReaderNonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/JSONSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/JSONSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forarchive/archivers/ZipArchivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/archivers/ZipArchivator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forarchive/dearchivers/Dearchivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/Dearchivator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forarchive/dearchivers/RarDearchivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/RarDearchivator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forarchive/dearchivers/ZipDearchivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/ZipDearchivator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forcrypo/decryptors/Decoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forcrypo/decryptors/Decoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forcrypo/decryptors/Decryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forcrypo/decryptors/Decryptor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,39 +53,40 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last.edited.regexp&quot;: &quot;C:\\\\fsdf.&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/wexes/IdeaProjects/skvosnoyproject/pom.xml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "extract.method.default.visibility": "public",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last.edited.regexp": "C:\\\\fsdf.",
+    "last_opened_file_path": "C:/Users/wexes/IdeaProjects/skvosnoyproject/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JSON&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JSON"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -133,7 +136,7 @@
       <updated>1700389241300</updated>
       <workItem from="1702909050695" duration="1370000" />
       <workItem from="1703001743655" duration="15477000" />
-      <workItem from="1703081336359" duration="5156000" />
+      <workItem from="1703081336359" duration="6729000" />
     </task>
     <task id="LOCAL-00001" summary="Do class calc">
       <created>1700416421337</created>
@@ -265,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703021251454</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Done with extending.">
+      <option name="closed" value="true" />
+      <created>1703086850507</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1703086850507</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +308,7 @@
     <MESSAGE value="To make forshifrator extending classes" />
     <MESSAGE value="To start work with filemanagers. I will write CLI soon." />
     <MESSAGE value="To start work with filemanagers++. I will write CLI soon." />
-    <option name="LAST_COMMIT_MESSAGE" value="To start work with filemanagers++. I will write CLI soon." />
+    <MESSAGE value="Done with extending." />
+    <option name="LAST_COMMIT_MESSAGE" value="Done with extending." />
   </component>
 </project>

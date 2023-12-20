@@ -23,7 +23,7 @@ public class ZipArchivator extends Archivator{
                 ZipEntry entry = new ZipEntry(nameOfFile);
                 zipOutputStream.putNextEntry(entry);
                 byte[] buffer = new byte[fileInputStream.available()];
-                fileInputStream.read(buffer);
+                int numberOfBytes = fileInputStream.read(buffer);
                 zipOutputStream.write(buffer);
                 zipOutputStream.closeEntry();
                 fileInputStream.close();

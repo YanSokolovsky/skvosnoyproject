@@ -7,7 +7,7 @@ public abstract class Shivrator {
     String Key;
     String dellitingSlashes(String fileName) {
         String expression = "\\+$";
-        fileName.replaceAll(expression, "");
+        fileName = fileName.replaceAll(expression, "");
         return fileName;
     }
     String getAddressOfFile(String fileName) {

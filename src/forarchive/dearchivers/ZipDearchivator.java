@@ -11,7 +11,7 @@ public class ZipDearchivator extends Dearchivator {
         archFile = filename;
         String address = getAddressOfFile(filename);
         address += "\\ZipDearchiveResult\\";
-        setStandartName(address);
+        setStandardName(address);
     }
     @Override
     ArrayList<String> dearchive() {
@@ -23,7 +23,7 @@ public class ZipDearchivator extends Dearchivator {
             while((entry = zipInputStream.getNextEntry())!=null){
                 name = entry.getName();
                 String shortName = getShortName(name);
-                String NormalNameOfFile = standartName + shortName;
+                String NormalNameOfFile = standardName + shortName;
                 names.add(NormalNameOfFile);
                 FileOutputStream fileOutputStream = new FileOutputStream(NormalNameOfFile);
                 for (int c = zipInputStream.read(); c != -1; c = zipInputStream.read()) {

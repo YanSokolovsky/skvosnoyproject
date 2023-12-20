@@ -28,6 +28,10 @@ public class RegexCalc extends Calculator{
 
     public String removeExponentiation(String inputString) {
         String regularExpressionForExponentiation = "\\d+\\.\\d+\\^\\d+\\.\\d+|\\d+\\.\\d+\\^\\d+|\\d+\\^\\d+\\.\\d+|\\d+\\^\\d+";
+        return removeSign(inputString, regularExpressionForExponentiation);
+    }
+
+    public String removeSign(String inputString, String regularExpressionForExponentiation) {
         Pattern pattern = Pattern.compile(regularExpressionForExponentiation);
         StringBuilder inputStringBuilder = new StringBuilder(inputString);
         Matcher matcher = pattern.matcher(inputStringBuilder);
@@ -42,71 +46,24 @@ public class RegexCalc extends Calculator{
         }
         return resultString;
     }
+
     public String removeDivision(String inputString) {
         String regularExpressionForDivision = "\\d+\\.\\d+/\\d+\\.\\d+|\\d+\\.\\d+/\\d+|\\d+/\\d+\\.\\d+|\\d+/\\d+";
-        Pattern divisionPattern = Pattern.compile(regularExpressionForDivision);
-        StringBuilder inputStringBuilder = new StringBuilder(inputString);
-        Matcher matcher = divisionPattern.matcher(inputStringBuilder);
-        String resultString = inputString;
-        while(matcher.find()) {
-            int startIndex = matcher.start();
-            int endIndex = matcher.end();
-            String extractedString = resultString.substring(startIndex, endIndex);
-            String replacementString = calculateAtomicExpression(extractedString);
-            resultString = matcher.replaceFirst(replacementString);
-            matcher = divisionPattern.matcher(resultString);
-        }
-        return resultString;
+        return removeSign(inputString, regularExpressionForDivision);
     }
 
     public String removeMultiplication(String inputString) {
         String regularExpressionForMultiplication = "\\d+\\.\\d+\\*\\d+\\.\\d+|\\d+\\.\\d+\\*\\d+|\\d+\\*\\d+\\.\\d+|\\d+\\*\\d+";
-        Pattern multiplicationPattern = Pattern.compile(regularExpressionForMultiplication);
-        StringBuilder inputStringBuilder = new StringBuilder(inputString);
-        Matcher matcher = multiplicationPattern.matcher(inputStringBuilder);
-        String resultString = inputString;
-        while(matcher.find()) {
-            int startIndex = matcher.start();
-            int endIndex = matcher.end();
-            String extractedString = resultString.substring(startIndex, endIndex);
-            String replacementString = calculateAtomicExpression(extractedString);
-            resultString = matcher.replaceFirst(replacementString);
-            matcher = multiplicationPattern.matcher(resultString);
-        }
-        return resultString;
+        return removeSign(inputString, regularExpressionForMultiplication);
     }
 
     public String removeSummation(String inputString) {
         String regularExpressionForSummation = "\\d+\\.\\d+\\+\\d+\\.\\d+|\\d+\\.\\d+\\+\\d+|\\d+\\+\\d+\\.\\d+|\\d+\\+\\d+";
-        Pattern pattern = Pattern.compile(regularExpressionForSummation);
-        StringBuilder stringBuilder = new StringBuilder(inputString);
-        Matcher matcher = pattern.matcher(stringBuilder);
-        String result = inputString;
-        while(matcher.find()) {
-            int start = matcher.start();
-            int end = matcher.end();
-            String extracted = result.substring(start, end);
-            String res = calculateAtomicExpression(extracted);
-            result = matcher.replaceFirst(res);
-            matcher = pattern.matcher(result);
-        }
-        return result;
+        return removeSign(inputString, regularExpressionForSummation);
     }
     public String removeSubtraction(String inputString) {
         String regularExpressionForSubtraction = "\\d+\\.\\d+-\\d+\\.\\d+|\\d+\\.\\d+-\\d+|\\d+-\\d+\\.\\d+|\\d+-\\d+";
-        Pattern pattern = Pattern.compile(regularExpressionForSubtraction);
-        StringBuilder stringBuilder = new StringBuilder(inputString);
-        Matcher matcher = pattern.matcher(stringBuilder);
-        String result = inputString;
-        while(matcher.find()) {
-            int start = matcher.start();
-            int end = matcher.end();
-            String extracted = result.substring(start, end);
-            String res = calculateAtomicExpression(extracted);
-            result = matcher.replaceFirst(res);
-            matcher = pattern.matcher(result);
-        }
-        return result;
+        return removeSign(inputString, regularExpressionForSubtraction);
     }
     public String calcExWithoutBrace1(String inputString) {
         StringBuilder stringBuilder = new StringBuilder(inputString);

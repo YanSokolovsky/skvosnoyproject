@@ -12,8 +12,8 @@ public class RarDearchivator extends Dearchivator {
     RarDearchivator(String filename) {
         archFile = filename;
         String address = getAddressOfFile(filename);
-        address += "\\RarDeachiveResult\\";
-        setStandartName(address);
+        address += "\\RarDearchiveResult\\";
+        setStandardName(address);
     }
     public ArrayList<String> getNames(List<File> files) {
         ArrayList<String> names = new ArrayList<>();
@@ -26,7 +26,7 @@ public class RarDearchivator extends Dearchivator {
     ArrayList<String> dearchive() {
         List<File> files = new ArrayList<>();
         File rarFile = new File(archFile);
-        File destDir = new File(standartName);
+        File destDir = new File(standardName);
         try {
             files = Junrar.extract(rarFile, destDir);
         } catch (IOException | RarException e) {

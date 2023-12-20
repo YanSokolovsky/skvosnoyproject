@@ -14,7 +14,7 @@ public class JSONReader extends Reader{
     public ArrayList<String> read(){
         ArrayList<String> expressions = new ArrayList<>();
         ObjectMapper obMap = new ObjectMapper();
-        data Data = null;
+        data Data;
         try {
             Data = obMap.readValue(new File(fileName), data.class);
             for (int i = 0 ; i < Data.expressions.size(); i++) {

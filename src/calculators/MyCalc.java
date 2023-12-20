@@ -65,7 +65,7 @@ public class MyCalc extends Calculator {
         polishNotationOrder = new ArrayList<>();
         Stack<Data> operatorStack  = new Stack<>();
         for (Data dataItem : simpleNotationOrder) {
-            if (!dataItem.isOperand()) {
+            if (dataItem.isSign()) {
                 if (dataItem.arithmeticOperator == '(') {
                     Data tempData = new Data('(');
                     operatorStack.push(tempData);
@@ -96,7 +96,7 @@ public class MyCalc extends Calculator {
     public void calculateResult() {
         Stack<Data> dataStack = new Stack<>();
         for (Data dataItem : polishNotationOrder) {
-            if (!dataItem.isOperand()) {
+            if (dataItem.isSign()) {
                 double operand1 = dataStack.pop().Operand;
                 double operand2 = dataStack.pop().Operand;
                 switch (dataItem.arithmeticOperator) {

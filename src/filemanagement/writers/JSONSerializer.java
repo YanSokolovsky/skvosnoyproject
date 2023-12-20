@@ -1,7 +1,6 @@
 package filemanagement.writers;
 
 import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
@@ -21,7 +20,7 @@ public class JSONSerializer extends StdSerializer<Writer.data> {
     @Override
     public void serialize(
             Writer.data value, JsonGenerator gen, SerializerProvider provider)
-            throws IOException, JsonProcessingException {
+            throws IOException {
         gen.setPrettyPrinter(new DefaultPrettyPrinter());
         gen.writeStartObject();
         gen.writeArrayFieldStart("expressions");

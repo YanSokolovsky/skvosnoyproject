@@ -5,15 +5,15 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public abstract class Dearchivator {
-    public String getStandartName() {
-        return standartName;
+    public String getStandardName() {
+        return standardName;
     }
 
-    public void setStandartName(String tandartName) {
-        standartName = standartName;
+    public void setStandardName(String standardised) {
+        standardName = standardised;
     }
 
-    String standartName;
+    String standardName;
 
     String archFile;
     public String getOutputFile() {
@@ -25,7 +25,7 @@ public abstract class Dearchivator {
     }
     String dellitingSlashes(String fileName) {
         String expression = "\\+$";
-        fileName.replaceAll(expression, "");
+        fileName = fileName.replaceAll(expression, "");
         return fileName;
     }
     String getAddressOfFile(String fileName) {
