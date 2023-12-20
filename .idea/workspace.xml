@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="Done with extending.">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="To do a little cosmetics.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculators/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculators/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculators/MyCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculators/MyCalc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculators/RegexCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculators/RegexCalc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filemanagement/readers/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/readers/JSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filemanagement/readers/JSONReaderNonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/readers/JSONReaderNonAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filemanagement/readers/XMLReaderNonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/readers/XMLReaderNonAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filemanagement/writers/JSONSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filemanagement/writers/JSONSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forarchive/archivers/ZipArchivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/archivers/ZipArchivator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forarchive/dearchivers/Dearchivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/Dearchivator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forarchive/dearchivers/RarDearchivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/RarDearchivator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forarchive/dearchivers/ZipDearchivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forarchive/dearchivers/ZipDearchivator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forcrypo/decryptors/Decoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forcrypo/decryptors/Decoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forcrypo/decryptors/Decryptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forcrypo/decryptors/Decryptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UsersInterfaces/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersInterfaces/CLI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +123,7 @@
       <updated>1700389241300</updated>
       <workItem from="1702909050695" duration="1370000" />
       <workItem from="1703001743655" duration="15477000" />
-      <workItem from="1703081336359" duration="6729000" />
+      <workItem from="1703081336359" duration="8442000" />
     </task>
     <task id="LOCAL-00001" summary="Do class calc">
       <created>1700416421337</created>
@@ -276,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703086850507</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="To do a little cosmetics.">
+      <option name="closed" value="true" />
+      <created>1703088119987</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1703088119987</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +304,7 @@
     <MESSAGE value="To start work with filemanagers. I will write CLI soon." />
     <MESSAGE value="To start work with filemanagers++. I will write CLI soon." />
     <MESSAGE value="Done with extending." />
-    <option name="LAST_COMMIT_MESSAGE" value="Done with extending." />
+    <MESSAGE value="To do a little cosmetics." />
+    <option name="LAST_COMMIT_MESSAGE" value="To do a little cosmetics." />
   </component>
 </project>
