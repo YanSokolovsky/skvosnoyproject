@@ -7,7 +7,7 @@ import java.lang.*;
 public class MyCalc extends Calculator {
     ArrayList<Data> simpleNotationOrder;
     ArrayList<Data> polishNotationOrder;
-    private int getPriority(char data) {
+    public int getPriority(char data) {
         return switch (data) {
             case '-', '+' -> 1;
             case '*', '/' -> 2;

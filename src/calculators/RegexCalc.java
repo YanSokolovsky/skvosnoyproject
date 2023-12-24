@@ -79,10 +79,10 @@ public class RegexCalc extends Calculator{
     public String calcExWithoutBrace2(String inputString) {
         inputString = DellSpaces(inputString);
         String res = removeExponentiation(inputString);
-        res = removeMultiplication(res);
         res = removeDivision(res);
-        res = removeSummation(res);
+        res = removeMultiplication(res);
         res = removeSubtraction(res);
+        res = removeSummation(res);
         return res;
     }
 
@@ -165,6 +165,8 @@ public class RegexCalc extends Calculator{
         for (int y = 0 ; y < counter; y++) {
             firstOperand = firstOperand / 10.0;
         }
+
+
         char operation = input.charAt(i);
         flag = 0;
         counter = 0;

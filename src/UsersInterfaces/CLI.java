@@ -11,7 +11,11 @@ public class CLI {
     // command "cleartoarch"
     // command "rar rarfile"
     // command "zip zipfile"
-    //
+    // command "dezip zipfile"
+    // command "derar rarfile"
+    // command "read filename\s(normal file)"
+    // command "calculate"
+    // command "write"
     boolean isExist(String fileName) {
         ArrayList<String> files = getListOfFiles();
         return files.contains(currPath + "\\" + fileName);

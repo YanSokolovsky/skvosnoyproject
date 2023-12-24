@@ -22,5 +22,8 @@ public abstract class Calculator {
         }
     }
     abstract Double Calculate(String expression);
-    abstract String DellSpaces(String processed_string);
+
+    String DellSpaces(String processed_string) {
+        return null;
+    }
 }
