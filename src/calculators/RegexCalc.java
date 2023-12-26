@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class RegexCalc extends Calculator{
     @Override
-    String DellSpaces(String processed_string) {
+    public String DellSpaces(String processed_string) {
         StringBuilder build = new StringBuilder(processed_string);
         for (int i = 0 ; i < build.length(); i++) {
             if (build.charAt(i) == ' ' || build.charAt(i) == '\r') {
