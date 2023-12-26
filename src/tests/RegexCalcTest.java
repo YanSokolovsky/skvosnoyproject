@@ -1,5 +1,6 @@
-package calculators;
+package tests;
 
+import calculators.RegexCalc;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

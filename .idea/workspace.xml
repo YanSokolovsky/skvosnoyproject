@@ -4,43 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="To stast CLI implementation.">
-      <change afterPath="$PROJECT_DIR$/src/calculators/RegexCalcTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/CalcWithLibTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyCalcTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/calculators/Calculator$Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/calculators/Calculator$Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/calculators/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/calculators/Calculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/calculators/MyCalc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/calculators/MyCalc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/calculators/RegexCalc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/calculators/RegexCalc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/readers/JSONReader$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/readers/JSONReader$expression.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/readers/JSONReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/filemanagement/readers/JSONReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/readers/JSONReaderNonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/filemanagement/readers/JSONReaderNonAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/readers/TXTReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/filemanagement/readers/TXTReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/readers/XMLReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/filemanagement/readers/XMLReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/readers/XMLReaderNonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/filemanagement/readers/XMLReaderNonAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/writers/JSONWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/filemanagement/writers/JSONWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/writers/JSONallex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/writers/JSONoutput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/writers/Serializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/writers/Serializerex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/writers/TXTWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/filemanagement/writers/TXTWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/writers/XMLWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/filemanagement/writers/XMLWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/writers/ex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/writers/one.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/filemanagement/writers/xmlserialiser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/forarchive/archivers/RarArch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/forarchive/archivers/ZipArch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/forarchive/dearchivers/RarDearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/forarchive/dearchivers/ZipDearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/forcrypo/decryptors/DeChifrator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/forcrypo/encryptors/Chifrator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersInterfaces/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersInterfaces/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculators/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculators/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculators/MyCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculators/MyCalc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculators/RegexCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculators/RegexCalc.java" afterDir="false" />
-    </list>
+    <list default="true" id="610440a5-30e3-4448-b165-b477312b52e3" name="Changes" comment="make some tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -233,7 +197,7 @@
       <workItem from="1702909050695" duration="1370000" />
       <workItem from="1703001743655" duration="15477000" />
       <workItem from="1703081336359" duration="10435000" />
-      <workItem from="1703415869630" duration="12685000" />
+      <workItem from="1703415869630" duration="12803000" />
     </task>
     <task id="LOCAL-00001" summary="Do class calc">
       <created>1700416421337</created>
@@ -389,7 +353,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703094050608</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="make some tests">
+      <option name="closed" value="true" />
+      <created>1703432899976</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1703432899976</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,6 +396,7 @@
     <MESSAGE value="Done with extending." />
     <MESSAGE value="To do a little cosmetics." />
     <MESSAGE value="To stast CLI implementation." />
-    <option name="LAST_COMMIT_MESSAGE" value="To stast CLI implementation." />
+    <MESSAGE value="make some tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="make some tests" />
   </component>
 </project>
